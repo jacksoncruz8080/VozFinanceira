@@ -137,7 +137,7 @@ export const TransactionForm: React.FC<TransactionFormProps> = ({ data, onChange
           ) : (
             <Save className="w-4 h-4" />
           )}
-          Confirmar e Salvar no Sheets
+          Salvar na planilha
         </button>
       </div>
     </motion.div>
