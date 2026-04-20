@@ -18,6 +18,11 @@ async function startServer() {
   app.use(cors());
   app.use(express.json());
 
+  // Health check route
+  app.get('/api/health', (req, res) => {
+    res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() });
+  });
+
   // API endpoint to save to Google Sheets
   app.post('/api/save-to-sheets', async (req, res) => {
     try {

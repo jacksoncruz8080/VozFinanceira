@@ -93,7 +93,7 @@ export const AudioRecorder: React.FC<AudioRecorderProps> = ({ onRecordingComplet
           {isRecording ? "Ouvindo você..." : isProcessing ? "Analisando voz..." : "Toque no microfone"}
         </p>
         <p className="text-muted text-xs mt-1">
-          {isRecording ? "Toque no quadrado para finalizar" : isProcessing ? "O Gemini está extraindo os detalhes" : "Diga o que você gastou ou recebeu"}
+          {isRecording ? "Toque no quadrado para finalizar" : isProcessing ? "A I.A está extraindo os detalhes" : "Diga o que você gastou ou recebeu"}
         </p>
       </div>
 

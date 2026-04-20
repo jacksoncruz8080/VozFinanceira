@@ -208,7 +208,7 @@ export default function App() {
                    <Mic2 className="absolute inset-0 m-auto w-8 h-8 text-primary opacity-50" />
                 </div>
                 <h2 className="text-xl font-bold text-ink mb-1">Analisando Áudio...</h2>
-                <p className="text-muted text-sm italic">"O Gemini está extraindo os dados..."</p>
+                <p className="text-muted text-sm italic">"A I.A está extraindo os dados..."</p>
               </motion.div>
             )}
 
