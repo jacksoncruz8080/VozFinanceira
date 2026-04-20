@@ -1,0 +1,6 @@
+{
+  "name": "Voz Financeira",
+  "description": "Sistema inteligente de registro financeiro por voz integrado ao Google Sheets e Gemini AI.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}
