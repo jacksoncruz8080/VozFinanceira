@@ -36,19 +36,8 @@ export default function App() {
   const handleAudioComplete = async (blob: Blob) => {
     setState('processing');
     try {
-      // Converter Blob para Base64
-      const reader = new FileReader();
-      const base64Promise = new Promise<string>((resolve) => {
-        reader.onloadend = () => {
-          const base64 = (reader.result as string).split(',')[1];
-          resolve(base64);
-        };
-      });
-      reader.readAsDataURL(blob);
-      const audioBase64 = await base64Promise;
-
-      // Transcrever
-      const text = await transcribeAudio(audioBase64, blob.type);
+      // Transcrever usando o blob diretamente (a lógica de WAV agora está no serviço)
+      const text = await transcribeAudio(blob);
       setTranscription(text);
 
       if (!text) {
